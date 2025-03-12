@@ -21,7 +21,7 @@ public class Movie {
     }
 
     public void setName(String name) {
-        if (name == null || name.isBlank()) {
+        if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("name cannot be null/blank");
         }
         this.name = name;
@@ -33,7 +33,7 @@ public class Movie {
     }
 
     public void setFormat(String format) {
-        if (format == null || format.isBlank()) {
+        if (format == null || format.isEmpty()) {
             throw new IllegalArgumentException("format cannot be null/blank");
         }
         this.format = format;
